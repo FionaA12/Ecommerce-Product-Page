@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Ecommerce Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <a href="#"><img src="Images/logo.png" class="logo" alt=""></a>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="header-icon">
+            <i class='bx bx-shopping-bag' id="cart-icon"></i>
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <div class="cart-content">
+                    <div class="cart-box">
+                       <!----- <img src="Images/hero.png" alt="" class="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-product-title">Earbuds</div>
+                            <div class="cart-price">$78.2</div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <i class='bx bxs-trash-alt cart-remove' ></i>---->
+                    </div>
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <button type="button" class="btn-buy">Buy Now</button> 
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+    <section class="home" id="home">
+        <div class="home-text">
+            <h3>A world of artistry awaits</h3>
+            <h1>Capturing <span>Moments</span><br><span>Expressing</span>Emotions</h1>
+            <p>Explore the world of art</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="Images/hero.png" alt="">
+        </div>
+        <div class="about-text">
+            <h2>About Us</h2>
+            <p>Welcome to <strong>Fiona's Art Elixirs</strong>, where art comes to life! 
+                I'm a passionate artist and creator dedicated to bringing you a world of imagination and inspiration through my unique creations.
+                My journey began with my deep love for art, and it has evolved into a platform where I can share my artistic vision.</p>
+            <p>I believe that art has the power to evoke emotions, tell stories, and inspire. 
+                My bottle art, paintings, and sketchings are a reflection of my commitment to creativity and craftsmanship.</p>
+            <p>Thank you for visiting my website. I invite you to explore my art collections and become a part of my artistic journey.
+                 Feel free to reach out to me with any questions or feedback; I'd love to hear from you!</p>
+        </div>
+    </section>
+    <section class="shop container" id="products">
+        <h2 class="section-title">Paintings, Sketchings and Bottle arts</h2>
+        <div class="shop-content">
+            <div class="product-box" onclick="window.location.href='sshop.html';">
+                <img src="Images/product4.png" alt="" class="product-img">
+                <h2 class="product-title">Bottle Blooms</h2>
+                <span class="price">$25</span>
+                <i class='bx bx-shopping-bag add-cart add-cart-button'></i>
+            </div>
+            <div class="product-box">
+                <img src="Images/product1.png" alt="" class="product-img">
+                <h2 class="product-title">Deer Family Serenity</h2>
+                <span class="price">$24</span>
+                <i class='bx bx-shopping-bag add-cart add-cart-button'></i>
+            </div>
+            <div class="product-box">
+                <img src="Images/product7.png" alt="" class="product-img">
+                <h2 class="product-title">Vibrant Yellow Hibiscus</h2>
+                <span class="price">$36</span>
+                <i class='bx bx-shopping-bag add-cart add-cart-button'></i>
+            </div>
+            <div class="product-box">
+                <img src="Images/product2.png" alt="" class="product-img">
+                <h2 class="product-title">Avian Beauty</h2>
+                <span class="price">$25</span>
+                <i class='bx bx-shopping-bag add-cart add-cart-button'></i>
+            </div>
+            <div class="product-box">
+                <img src="Images/product3.png" alt="" class="product-img">
+                <h2 class="product-title">Enigmatic Elegance</h2>
+                <span class="price">$30</span>
+                <i class='bx bx-shopping-bag add-cart add-cart-button'></i>
+            </div>
+            <div class="product-box">
+                <img src="Images/product5.png" alt="" class="product-img">
+                <h2 class="product-title">Floral Harmony</h2>
+                <span class="price">$22</span>
+                <i class='bx bx-shopping-bag add-cart add-cart-button'></i>
+            </div>
+            <div class="product-box">
+                <img src="Images/product6.png" alt="" class="product-img">
+                <h2 class="product-title">Botanical Bliss</h2>
+                <span class="price">$28</span>
+                <i class='bx bx-shopping-bag add-cart add-cart-button'></i>
+            </div>
+            <div class="product-box">
+                <img src="Images/product8.png" alt="" class="product-img">
+                <h2 class="product-title">Blossoming Beauty</h2>
+                <span class="price">$24</span>
+                <i class='bx bx-shopping-bag add-cart add-cart-button'></i>
+            </div>
+        </div>
+    </section>
+    <div class="contact-container" id="contact">
+        <div class="contact-header">
+            <h1>Fiona's Art Elixirs</h1>
+            <p>Art is the journey of a free soul - it finds beauty in imperfections and strength in vulnerability</p>
+        </div>
+        <div class="contact-icons">
+            <a href="https://www.linkedin.com/your-linkedin-profile" target="_blank">
+                <i class='bx bxl-linkedin'></i>
+            </a>
+            <a href="https://wa.me/your-whatsapp-number" target="_blank">
+                <i class='bx bxl-whatsapp'></i>
+            </a>
+            <a href="https://github.com/your-github-profile" target="_blank">
+                <i class='bx bxl-github'></i>
+            </a>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
